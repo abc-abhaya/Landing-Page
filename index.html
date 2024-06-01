@@ -75,8 +75,12 @@
 				</div>
 			</section>
 			<section class="box vh-big">
-				<p>Copyright &copy; The Odin Project 2021</p>
+				<p id="foot"></p>
 			</section>
 		</div>
+		<script>
+			const foot = document.getElementById('foot');
+			foot.innerText = `Copyright © The Odin Project ${new Date().getFullYear()}`;
+		</script>
 	</body>
 </html>
